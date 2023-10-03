@@ -2,15 +2,23 @@
     <channel>
         <title>我的全新 Hugo 网站</title>
         <link>https://lv123123long.github.io/</link>
-        <description>我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 03 Oct 2023 18:19:29 &#43;0800</lastBuildDate>
+        <description>这是我的全新 Hugo 网站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 03 Oct 2023 20:28:41 &#43;0800</lastBuildDate>
             <atom:link href="https://lv123123long.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Second_post</title>
+    <link>https://lv123123long.github.io/second_post/</link>
+    <pubDate>Tue, 03 Oct 2023 20:28:41 &#43;0800</pubDate><author>
+        <name>xxxx</name>
+    </author><guid>https://lv123123long.github.io/second_post/</guid>
+    <description><![CDATA[faewhjgeawf ffjewfkfhawlfkm;ewalf
+gavjwelm]]></description>
+</item><item>
     <title>First_post</title>
-    <link>https://lv123123long.github.io/posts/first_post/</link>
+    <link>https://lv123123long.github.io/first_post/</link>
     <pubDate>Tue, 03 Oct 2023 18:19:29 &#43;0800</pubDate><author>
-        <name>作者</name>
-    </author><guid>https://lv123123long.github.io/posts/first_post/</guid>
+        <name>xxxx</name>
+    </author><guid>https://lv123123long.github.io/first_post/</guid>
     <description><![CDATA[第一篇博客哈哈哈]]></description>
 </item></channel>
 </rss>
