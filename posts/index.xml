@@ -3,7 +3,14 @@
         <title>所有文章 - 我的全新 Hugo 网站</title>
         <link>https://lv123123long.github.io/posts/</link>
         <description>所有文章 | 我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 03 Oct 2023 20:28:41 &#43;0800</lastBuildDate><atom:link href="https://lv123123long.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 10 Oct 2023 22:35:20 &#43;0800</lastBuildDate><atom:link href="https://lv123123long.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Libo</title>
+    <link>https://lv123123long.github.io/libo/</link>
+    <pubDate>Tue, 10 Oct 2023 22:35:20 &#43;0800</pubDate><author>
+        <name>xxxx</name>
+    </author><guid>https://lv123123long.github.io/libo/</guid>
+    <description><![CDATA[博客创建过程记录 下载hugo 官网下载，，扩展版本的hugo 添加到环境变量，查看hugo是否可用 查找主题 hugo官网主题查找 我选择的是dolt]]></description>
+</item><item>
     <title>Second_post</title>
     <link>https://lv123123long.github.io/second_post/</link>
     <pubDate>Tue, 03 Oct 2023 20:28:41 &#43;0800</pubDate><author>
