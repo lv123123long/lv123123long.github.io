@@ -1,7 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Categories - 分类 - 我的全新 Hugo 网站</title>
+        <title>Categories - 分类 - lvlongxin&#39;s blog</title>
         <link>https://lv123123long.github.io/categories/</link>
-        <description>Categories - 分类 - 我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="https://lv123123long.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
+        <description>Categories - 分类 - lvlongxin&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a1749907938@gmail.com (lvlongxin)</managingEditor>
+            <webMaster>a1749907938@gmail.com (lvlongxin)</webMaster><atom:link href="https://lv123123long.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
 </rss>

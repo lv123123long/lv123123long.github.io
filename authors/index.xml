@@ -1,7 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Authors - 作者 - 我的全新 Hugo 网站</title>
+        <title>Authors - 作者 - lvlongxin&#39;s blog</title>
         <link>https://lv123123long.github.io/authors/</link>
-        <description>Authors - 作者 - 我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="https://lv123123long.github.io/authors/" rel="self" type="application/rss+xml" /></channel>
+        <description>Authors - 作者 - lvlongxin&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a1749907938@gmail.com (lvlongxin)</managingEditor>
+            <webMaster>a1749907938@gmail.com (lvlongxin)</webMaster><lastBuildDate>Thu, 12 Oct 2023 00:55:59 &#43;0800</lastBuildDate><atom:link href="https://lv123123long.github.io/authors/" rel="self" type="application/rss+xml" /><item>
+    <title>helaoshi</title>
+    <link>https://lv123123long.github.io/authors/helaoshi/</link>
+    <pubDate>Thu, 12 Oct 2023 00:55:59 &#43;0800</pubDate><author>
+        <name>lvlongxin</name>
+    </author><guid>https://lv123123long.github.io/authors/helaoshi/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>lvlongxin</title>
+    <link>https://lv123123long.github.io/authors/lvlongxin/</link>
+    <pubDate>Thu, 12 Oct 2023 00:55:59 &#43;0800</pubDate><author>
+        <name>lvlongxin</name>
+    </author><guid>https://lv123123long.github.io/authors/lvlongxin/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>

@@ -1,20 +1,37 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>所有文章 - 我的全新 Hugo 网站</title>
+        <title>所有文章 - lvlongxin&#39;s blog</title>
         <link>https://lv123123long.github.io/posts/</link>
-        <description>所有文章 | 我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 10 Oct 2023 22:35:20 &#43;0800</lastBuildDate><atom:link href="https://lv123123long.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <description>所有文章 | lvlongxin&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a1749907938@gmail.com (lvlongxin)</managingEditor>
+            <webMaster>a1749907938@gmail.com (lvlongxin)</webMaster><lastBuildDate>Thu, 12 Oct 2023 00:55:59 &#43;0800</lastBuildDate><atom:link href="https://lv123123long.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>前置参数介绍</title>
+    <link>https://lv123123long.github.io/%E5%89%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D/</link>
+    <pubDate>Thu, 12 Oct 2023 00:55:59 &#43;0800</pubDate><author>
+                    <name>lvlongxin</name>
+                </author><author>
+                    <name>helaoshi</name>
+                </author><guid>https://lv123123long.github.io/%E5%89%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D/</guid>
+    <description><![CDATA[Monday helaosh jiandage libo]]></description>
+</item><item>
+    <title>My_blog</title>
+    <link>https://lv123123long.github.io/my_blog/</link>
+    <pubDate>Tue, 10 Oct 2023 23:23:35 &#43;0800</pubDate><author>
+        <name>lvlongxin</name>
+    </author><guid>https://lv123123long.github.io/my_blog/</guid>
+    <description><![CDATA[My blog hugo.toml hugo serve 的默认运行环境是 development, 而 hugo 的默认运行环境是 production. 由于本地 development 环境的限制, 评论系统, CDN 和 fingerprint 不会在 development 环境下启用. 你可以使用 hugo serve -e production 命令来开启这些]]></description>
+</item><item>
     <title>Libo</title>
     <link>https://lv123123long.github.io/libo/</link>
     <pubDate>Tue, 10 Oct 2023 22:35:20 &#43;0800</pubDate><author>
-        <name>xxxx</name>
+        <name>lvlongxin</name>
     </author><guid>https://lv123123long.github.io/libo/</guid>
     <description><![CDATA[博客创建过程记录 下载hugo 官网下载，，扩展版本的hugo 添加到环境变量，查看hugo是否可用 查找主题 hugo官网主题查找 我选择的是dolt]]></description>
 </item><item>
     <title>Second_post</title>
     <link>https://lv123123long.github.io/second_post/</link>
     <pubDate>Tue, 03 Oct 2023 20:28:41 &#43;0800</pubDate><author>
-        <name>xxxx</name>
+        <name>lvlongxin</name>
     </author><guid>https://lv123123long.github.io/second_post/</guid>
     <description><![CDATA[faewhjgeawf ffjewfkfhawlfkm;ewalf
 gavjwelm]]></description>
@@ -22,7 +39,7 @@ gavjwelm]]></description>
     <title>First_post</title>
     <link>https://lv123123long.github.io/first_post/</link>
     <pubDate>Tue, 03 Oct 2023 18:19:29 &#43;0800</pubDate><author>
-        <name>xxxx</name>
+        <name>lvlongxin</name>
     </author><guid>https://lv123123long.github.io/first_post/</guid>
     <description><![CDATA[第一篇博客哈哈哈]]></description>
 </item></channel>
