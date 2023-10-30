@@ -1,0 +1,495 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Django_环境安装 - lvlongxin&#39;s blog</title><meta name="Description" content="Wecome to my blog"><meta property="og:title" content="Django_环境安装" />
+<meta property="og:description" content="djiango安装 python虚拟环境 1 2 3 conda create --name my_env python=3.6.8 conda activate my_env conda换源原来的源 换源 寻找.condarc 文件，，上面图中有，如果没有，输入" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" /><meta property="og:image" content="https://lv123123long.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-27T23:56:47+08:00" />
+<meta property="article:modified_time" content="2023-10-27T23:56:47+08:00" /><meta property="og:site_name" content="lvlongxin" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://lv123123long.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Django_环境安装"/>
+<meta name="twitter:description" content="djiango安装 python虚拟环境 1 2 3 conda create --name my_env python=3.6.8 conda activate my_env conda换源原来的源 换源 寻找.condarc 文件，，上面图中有，如果没有，输入"/>
+<meta name="application-name" content="LvLongXin">
+<meta name="apple-mobile-web-app-title" content="LvLongXin">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" /><link rel="prev" href="https://lv123123long.github.io/%E5%89%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Django_环境安装",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/lv123123long.github.io\/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85\/"
+        },"genre": "posts","wordcount":  1099 ,
+        "url": "https:\/\/lv123123long.github.io\/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85\/","datePublished": "2023-10-27T23:56:47+08:00","dateModified": "2023-10-27T23:56:47+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "lvlongxin"
+            },"description": ""
+    }
+    </script><script src="//instant.page/5.2.0" defer type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+</head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="lvlongxin&#39;s blog"><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="欢迎使用，搜索我博客内容" id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-select" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="切换主题">
+                        <option value="light">浅色</option>
+                        <option value="dark">深色</option>
+                        <option value="black">黑色</option>
+                        <option value="auto">跟随系统</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="lvlongxin&#39;s blog"><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="欢迎使用，搜索我博客内容" id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a href="javascript:void(0);" class="menu-item theme-select" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="切换主题">
+                    <option value="light">浅色</option>
+                    <option value="dark">深色</option>
+                    <option value="black">黑色</option>
+                    <option value="auto">跟随系统</option>
+                </select>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Django_环境安装</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">lvlongxin</a>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-10-27">2023-10-27</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-10-27">2023-10-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1099 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="true">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#python虚拟环境">python虚拟环境</a>
+      <ul>
+        <li><a href="#conda换源">conda换源</a>
+          <ul>
+            <li><a href="#参考">参考</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#安装djiango">安装djiango</a></li>
+    <li><a href="#django的使用">django的使用</a></li>
+    <li><a href="#首次运行django">首次运行django</a>
+      <ul>
+        <li><a href="#student-app">student App</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="djiango安装" class="headerLink">
+    <a href="#djiango%e5%ae%89%e8%a3%85" class="header-mark"></a>djiango安装</h1><h2 id="python虚拟环境" class="headerLink">
+    <a href="#python%e8%99%9a%e6%8b%9f%e7%8e%af%e5%a2%83" class="header-mark"></a>python虚拟环境</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">conda create --name my_env python=3.6.8
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">conda activate my_env
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="conda换源" class="headerLink">
+    <a href="#conda%e6%8d%a2%e6%ba%90" class="header-mark"></a>conda换源</h3><p>原来的源</p>
+<p><figure><a class="lightgallery" href="assets/image-20231028002419158.png" title="image-20231028002419158" data-thumbnail="assets/image-20231028002419158.png">
+        <img
+            
+            loading="lazy"
+            src="assets/image-20231028002419158.png"
+            srcset="assets/image-20231028002419158.png, assets/image-20231028002419158.png 1.5x, assets/image-20231028002419158.png 2x"
+            sizes="auto"
+            alt="image-20231028002419158">
+    </a></figure></p>
+<p>换源</p>
+<p>寻找.condarc 文件，，上面图中有，如果没有，输入以下命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">conda config --set show_channel_urls yes
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>替换里面的内容</p>
+<p><a href="https://mirrors4.tuna.tsinghua.edu.cn/help/anaconda/" target="_blank" rel="noopener noreferrer">anaconda | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></p>
+<ul>
+<li>清除索引缓存</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">conda clean -i
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="参考" class="headerLink">
+    <a href="#%e5%8f%82%e8%80%83" class="header-mark"></a>参考</h4><p>[Anaconda换源(Ubuntu) - 知乎 (zhihu.com)](<a href="https://zhuanlan.zhihu.com/p/659667063#:~:text=1" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/659667063#:~:text=1</a>、查看目前的源 conda info 可以看到此时是国外源，为了下载加速，我们需要切换国内源，这里推荐清华源。 2、找到.condarc 查看%2Fhome%2Fusername,(你的用户名)下是否有.condarc文件 如果没有.condarc，命令行输入以下命令； conda config &ndash;set show_channel_urls yes)</p>
+<h2 id="安装djiango" class="headerLink">
+    <a href="#%e5%ae%89%e8%a3%85djiango" class="header-mark"></a>安装djiango</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pip install django==1.11.2
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pip show django
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="django的使用" class="headerLink">
+    <a href="#django%e7%9a%84%e4%bd%bf%e7%94%a8" class="header-mark"></a>django的使用</h2><ul>
+<li>创建项目目录</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd student_house &amp;&amp; django-admin startproject student_sys
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>&ndash; manage.py</p>
+<p>&ndash;  student_sys</p>
+<p>​	&ndash; <strong>init</strong>.py</p>
+<p>​	&ndash; settings.py</p>
+<p>​	&ndash; urls.py</p>
+<p>​	&ndash; wsgi.py</p>
+<ul>
+<li>创建App</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">python manage.py startapp student
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>&ndash; student</p>
+<p>​	&ndash; admin.py</p>
+<p>​	&ndash; apps.py</p>
+<p>​	&ndash; <strong>init</strong>.py</p>
+<p>​	&ndash; migrations/</p>
+<p>​	&ndash; models.py</p>
+<p>​	&ndash; tests.py</p>
+<p>​	&ndash; views.py</p>
+<h2 id="首次运行django" class="headerLink">
+    <a href="#%e9%a6%96%e6%ac%a1%e8%bf%90%e8%a1%8cdjango" class="header-mark"></a>首次运行django</h2><h3 id="student-app" class="headerLink">
+    <a href="#student-app" class="header-mark"></a>student App</h3><ul>
+<li>student/models.py:</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># -*- coding: utf-8 -*-
+</span></span><span class="line"><span class="cl">from __future__ import unicode_literals
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">from django.db import models
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">class Student(models.Model):
+</span></span><span class="line"><span class="cl">    SEX_ITEMS = [
+</span></span><span class="line"><span class="cl">        (1, &#39;男&#39;),
+</span></span><span class="line"><span class="cl">        (2, &#39;女&#39;),
+</span></span><span class="line"><span class="cl">        (0, &#39;未知&#39;),
+</span></span><span class="line"><span class="cl">    ]
+</span></span><span class="line"><span class="cl">    STATUS_ITEMS = [
+</span></span><span class="line"><span class="cl">        (0, &#39;申请&#39;),
+</span></span><span class="line"><span class="cl">        (1, &#39;通过&#39;),
+</span></span><span class="line"><span class="cl">        (2, &#39;拒绝&#39;),
+</span></span><span class="line"><span class="cl">    ]
+</span></span><span class="line"><span class="cl">    name = models.CharField(max_length=128, verbose_name=&#34;姓名&#34;)
+</span></span><span class="line"><span class="cl">    sex = models.IntegerField(choices=SEX_ITEMS, verbose_name=&#34;性别&#34;)
+</span></span><span class="line"><span class="cl">    profession = models.CharField(max_length=128, verbose_name=&#34;职业&#34;)
+</span></span><span class="line"><span class="cl">    email = models.EmailField(verbose_name=&#34;Email&#34;)
+</span></span><span class="line"><span class="cl">    qq = models.CharField(max_length=128, verbose_name=&#34;QQ&#34;)
+</span></span><span class="line"><span class="cl">    phone = models.CharField(max_length=128, verbose_name=&#34;电话&#34;)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    status = models.IntegerField(choices=STATUS_ITEMS, verbose_name=&#34;审核状态&#34;)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    created_time = models.DateTimeField(auto_now_add=True, editable=False, verbose_name=&#34;创建时间&#34;)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    def __unicode__(self):
+</span></span><span class="line"><span class="cl">        return &#39;&lt;Student: {}&gt;&#39;.format(self.name)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    class Meta:
+</span></span><span class="line"><span class="cl">        verbose_name = verbose_name_plural = &#34;学员信息&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>admin.py:</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># -*- coding: utf-8 -*-
+</span></span><span class="line"><span class="cl">from __future__ import unicode_literals
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">from django.contrib import admin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">from .models import Student
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">class StudentAdmin(admin.ModelAdmin):
+</span></span><span class="line"><span class="cl">    list_display = (&#39;id&#39;, &#39;name&#39;, &#39;sex&#39;, &#39;profession&#39;, &#39;email&#39;, &#39;qq&#39;, &#39;phone&#39;, &#39;status&#39;, &#39;created_time&#39;)
+</span></span><span class="line"><span class="cl">    list_filter = (&#39;sex&#39;, &#39;status&#39;, &#39;created_time&#39;)
+</span></span><span class="line"><span class="cl">    search_fields = (&#39;name&#39;, &#39;profession&#39;)
+</span></span><span class="line"><span class="cl">    fieldsets = (
+</span></span><span class="line"><span class="cl">        (None, {
+</span></span><span class="line"><span class="cl">         &#39;fields&#39;: (
+</span></span><span class="line"><span class="cl">                 &#39;name&#39;,
+</span></span><span class="line"><span class="cl">                 (&#39;sex&#39;, &#39;profession&#39;),
+</span></span><span class="line"><span class="cl">                 (&#39;email&#39;, &#39;qq&#39;, &#39;phone&#39;),
+</span></span><span class="line"><span class="cl">                 &#39;status&#39;,
+</span></span><span class="line"><span class="cl">                 )
+</span></span><span class="line"><span class="cl">         }),
+</span></span><span class="line"><span class="cl">    )
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">admin.site.register(Student, StudentAdmin)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接下来我们把这个<code>student</code>app放到settings.py中。</p>
+<p>我们只需要在INSTALLED_APPS配置的最后，或者最前面增加&rsquo;student&rsquo;即可:</p>
+<p>settings.py文件:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">INSTALLED_APPS = [
+</span></span><span class="line"><span class="cl">    &#39;student&#39;,
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    &#39;django.contrib.admin&#39;,
+</span></span><span class="line"><span class="cl">    &#39;django.contrib.auth&#39;,
+</span></span><span class="line"><span class="cl">    &#39;django.contrib.contenttypes&#39;,
+</span></span><span class="line"><span class="cl">    &#39;django.contrib.sessions&#39;,
+</span></span><span class="line"><span class="cl">    &#39;django.contrib.messages&#39;,
+</span></span><span class="line"><span class="cl">    &#39;django.contrib.staticfiles&#39;,
+</span></span><span class="line"><span class="cl">]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>为了方便使用，我们把允许的hosts改成通配符</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ALLOWED_HOSTS = [&#39;*&#39;]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果是IP的话，一个元素一个IP</p>
+<p><strong>创建表和超级用户</strong></p>
+<ul>
+<li><code>python manage.py makemigrations</code> 创建迁移文件</li>
+<li><code>python manage.py migrate</code> 创建表</li>
+<li><code>python manage.py createsuperuser</code> 根据提示，输出用户名，邮箱，密码</li>
+</ul>
+<p>启动项目：python manage.py runserver 192.168.124.222:8000</p>
+</div>
+
+        
+
+<div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-10-27</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+                    </span></div>
+            <div class="post-info-share"><button title="分享到 Twitter" data-sharer="twitter" data-url="https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" data-title="Django_环境安装" data-via="xxxx"><span class="fab fa-twitter fa-fw"></span></button><button title="分享到 Facebook" data-sharer="facebook" data-url="https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/"><span class="fab fa-facebook-square fa-fw"></span></button><button title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" data-title="Django_环境安装" data-web><span class="fab fa-whatsapp fa-fw"></span></button><button title="分享到 Line" data-sharer="line" data-url="https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" data-title="Django_环境安装"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="分享到 微博" data-sharer="weibo" data-url="https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" data-title="Django_环境安装"><span class="fab fa-weibo fa-fw"></span></button><button title="分享到 Myspace" data-sharer="myspace" data-url="https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" data-title="Django_环境安装" data-description=""><span data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></span></button><button title="分享到 Blogger" data-sharer="blogger" data-url="https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" data-title="Django_环境安装" data-description=""><span class="fab fa-blogger fa-fw"></span></button><button title="分享到 Evernote" data-sharer="evernote" data-url="https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" data-title="Django_环境安装"><span class="fab fa-evernote fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/%E5%89%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D/" class="prev" rel="prev" title="前置参数介绍"><i class="fas fa-angle-left fa-fw"></i>前置参数介绍</a></div>
+</div>
+<div id="comments"></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.119.0">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">lvlongxin</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">何老师的备案</span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="回到顶部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"sharerjs":true,"table":{"sort":true},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>
