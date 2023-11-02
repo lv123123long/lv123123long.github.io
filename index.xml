@@ -4,9 +4,16 @@
         <link>https://lv123123long.github.io/</link>
         <description>Wecome to my blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a1749907938@gmail.com (lvlongxin)</managingEditor>
-            <webMaster>a1749907938@gmail.com (lvlongxin)</webMaster><lastBuildDate>Fri, 27 Oct 2023 23:56:47 &#43;0800</lastBuildDate>
+            <webMaster>a1749907938@gmail.com (lvlongxin)</webMaster><lastBuildDate>Thu, 02 Nov 2023 23:17:33 &#43;0800</lastBuildDate>
             <atom:link href="https://lv123123long.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Vue20231102</title>
+    <link>https://lv123123long.github.io/vue20231102/</link>
+    <pubDate>Thu, 02 Nov 2023 23:17:33 &#43;0800</pubDate><author>
+        <name>lvlongxin</name>
+    </author><guid>https://lv123123long.github.io/vue20231102/</guid>
+    <description><![CDATA[Vue20231102 Vue通信方式 props: 可以实现父子组件通信，props数据还是只读的！！！ 需要在父组件中引用一下 1 import Child from &#39;./Child.vue&#39; 事件 自定义事件 可以实现组件之间的通信 原]]></description>
+</item><item>
     <title>Django_环境安装</title>
     <link>https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/</link>
     <pubDate>Fri, 27 Oct 2023 23:56:47 &#43;0800</pubDate><author>

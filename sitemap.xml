@@ -2,17 +2,18 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://lv123123long.github.io/</loc><lastmod>2023-11-02T23:17:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lv123123long.github.io/posts/</loc><lastmod>2023-11-02T23:17:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://lv123123long.github.io/vue20231102/</loc><lastmod>2023-11-02T23:17:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/</loc><lastmod>2023-10-27T23:56:47&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://lv123123long.github.io/</loc><lastmod>2023-10-27T23:56:47&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://lv123123long.github.io/posts/</loc><lastmod>2023-10-27T23:56:47&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://lv123123long.github.io/authors/</loc><lastmod>2020-03-04T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://lv123123long.github.io/authors/helaoshi/</loc><lastmod>2020-03-04T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://lv123123long.github.io/authors/lvlongxin/</loc><lastmod>2020-03-04T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://lv123123long.github.io/%E5%89%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D/</loc><lastmod>2020-03-04T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://lv123123long.github.io/my_blog/</loc><lastmod>2023-10-10T23:23:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://lv123123long.github.io/libo/</loc><lastmod>2023-10-10T22:35:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://lv123123long.github.io/second_post/</loc><lastmod>2023-10-03T20:28:41&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://lv123123long.github.io/first_post/</loc><lastmod>2023-10-03T18:19:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://lv123123long.github.io/my_blog/</loc><lastmod>2023-10-10T23:23:35&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://lv123123long.github.io/libo/</loc><lastmod>2023-10-10T22:35:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://lv123123long.github.io/second_post/</loc><lastmod>2023-10-03T20:28:41&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://lv123123long.github.io/first_post/</loc><lastmod>2023-10-03T18:19:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://lv123123long.github.io/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://lv123123long.github.io/series/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://lv123123long.github.io/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
