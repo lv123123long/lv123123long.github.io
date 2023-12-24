@@ -7,36 +7,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
-    <title>Vue20231102 - lvlongxin&#39;s blog</title><meta name="Description" content="Wecome to my blog"><meta property="og:title" content="Vue20231102" />
-<meta property="og:description" content="Vue20231102 Vue通信方式 props: 可以实现父子组件通信，props数据还是只读的！！！ 需要在父组件中引用一下 1 import Child from &#39;./Child.vue&#39; 事件 自定义事件 可以实现组件之间的通信 原" />
+    <title>20231224one - lvlongxin&#39;s blog</title><meta name="Description" content="Wecome to my blog"><meta property="og:title" content="20231224one" />
+<meta property="og:description" content="V2ray代码解读 OverView 依赖的第三方库 In production: gorilla/websocket lucas-clemente/quic-go pires/go-proxyproto seiflotfy/cuckoofilter google/starlark-go jhump/protoreflect inetaf/netaddr For testing only: miekg/dns h12w/socks 代码结构 文件.gitignore：就是在上传代码的时候，需要剔除哪些文件，不进" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://lv123123long.github.io/vue20231102/" /><meta property="og:image" content="https://lv123123long.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-11-02T23:17:33+08:00" />
-<meta property="article:modified_time" content="2023-11-02T23:17:33+08:00" /><meta property="og:site_name" content="lvlongxin" />
+<meta property="og:url" content="https://lv123123long.github.io/20231224one/" /><meta property="og:image" content="https://lv123123long.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-24T19:43:32+08:00" />
+<meta property="article:modified_time" content="2023-12-24T19:43:32+08:00" /><meta property="og:site_name" content="lvlongxin" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://lv123123long.github.io/logo.png"/>
 
-<meta name="twitter:title" content="Vue20231102"/>
-<meta name="twitter:description" content="Vue20231102 Vue通信方式 props: 可以实现父子组件通信，props数据还是只读的！！！ 需要在父组件中引用一下 1 import Child from &#39;./Child.vue&#39; 事件 自定义事件 可以实现组件之间的通信 原"/>
+<meta name="twitter:title" content="20231224one"/>
+<meta name="twitter:description" content="V2ray代码解读 OverView 依赖的第三方库 In production: gorilla/websocket lucas-clemente/quic-go pires/go-proxyproto seiflotfy/cuckoofilter google/starlark-go jhump/protoreflect inetaf/netaddr For testing only: miekg/dns h12w/socks 代码结构 文件.gitignore：就是在上传代码的时候，需要剔除哪些文件，不进"/>
 <meta name="application-name" content="LvLongXin">
 <meta name="apple-mobile-web-app-title" content="LvLongXin">
 
 <meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://lv123123long.github.io/vue20231102/" /><link rel="prev" href="https://lv123123long.github.io/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" /><link rel="next" href="https://lv123123long.github.io/v2fly_one/" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://lv123123long.github.io/20231224one/" /><link rel="prev" href="https://lv123123long.github.io/dns/" />
 <link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Vue20231102",
+        "headline": "20231224one",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/lv123123long.github.io\/vue20231102\/"
-        },"genre": "posts","wordcount":  163 ,
-        "url": "https:\/\/lv123123long.github.io\/vue20231102\/","datePublished": "2023-11-02T23:17:33+08:00","dateModified": "2023-11-02T23:17:33+08:00","publisher": {
+            "@id": "https:\/\/lv123123long.github.io\/20231224one\/"
+        },"genre": "posts","wordcount":  746 ,
+        "url": "https:\/\/lv123123long.github.io\/20231224one\/","datePublished": "2023-12-24T19:43:32+08:00","dateModified": "2023-12-24T19:43:32+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -128,11 +128,11 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Vue20231102</h1><div class="post-meta">
+            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">20231224one</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">lvlongxin</a>
                 </span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-11-02">2023-11-02</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-11-02">2023-11-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 163 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-12-24">2023-12-24</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2023-12-24">2023-12-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 746 字&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="true">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -140,104 +140,98 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#vue通信方式">Vue通信方式</a></li>
-    <li><a href="#事件">事件</a>
+    <li><a href="#overview">OverView</a>
       <ul>
-        <li><a href="#事件回调">事件回调</a></li>
-      </ul>
-    </li>
-    <li><a href="#项目初始化">项目初始化</a>
-      <ul>
-        <li>
+        <li><a href="#依赖的第三方库">依赖的第三方库</a></li>
+        <li><a href="#代码结构">代码结构</a>
           <ul>
-            <li><a href="#报错">报错</a></li>
+            <li><a href="#文件">文件</a>
+              <ul>
+                <li><a href="#configgo">config.go</a></li>
+                <li><a href="#v2raygo">v2ray.go</a></li>
+              </ul>
+            </li>
+            <li><a href="#目录">目录</a>
+              <ul>
+                <li><a href="#main">main</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h1 id="vue20231102" class="headerLink">
-    <a href="#vue20231102" class="header-mark"></a>Vue20231102</h1><h2 id="vue通信方式" class="headerLink">
-    <a href="#vue%e9%80%9a%e4%bf%a1%e6%96%b9%e5%bc%8f" class="header-mark"></a>Vue通信方式</h2><ul>
-<li>props: 可以实现父子组件通信，props数据还是只读的！！！</li>
-<li>需要在父组件中引用一下</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import Child from &#39;./Child.vue&#39;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="事件" class="headerLink">
-    <a href="#%e4%ba%8b%e4%bb%b6" class="header-mark"></a>事件</h2><ul>
-<li>自定义事件</li>
-<li>
+            </div><div class="content" id="content"><h1 id="v2ray代码解读" class="headerLink">
+    <a href="#v2ray%e4%bb%a3%e7%a0%81%e8%a7%a3%e8%af%bb" class="header-mark"></a>V2ray代码解读</h1><h2 id="overview" class="headerLink">
+    <a href="#overview" class="header-mark"></a>OverView</h2><h3 id="依赖的第三方库" class="headerLink">
+    <a href="#%e4%be%9d%e8%b5%96%e7%9a%84%e7%ac%ac%e4%b8%89%e6%96%b9%e5%ba%93" class="header-mark"></a>依赖的第三方库</h3><ul>
+<li>In production:
 <ul>
-<li>可以实现组件之间的通信</li>
+<li><a href="https://github.com/gorilla/websocket" target="_blank" rel="noopener noreferrer">gorilla/websocket</a></li>
+<li><a href="https://github.com/lucas-clemente/quic-go" target="_blank" rel="noopener noreferrer">lucas-clemente/quic-go</a></li>
+<li><a href="https://github.com/pires/go-proxyproto" target="_blank" rel="noopener noreferrer">pires/go-proxyproto</a></li>
+<li><a href="https://github.com/seiflotfy/cuckoofilter" target="_blank" rel="noopener noreferrer">seiflotfy/cuckoofilter</a></li>
+<li><a href="https://github.com/google/starlark-go" target="_blank" rel="noopener noreferrer">google/starlark-go</a></li>
+<li><a href="https://github.com/jhump/protoreflect" target="_blank" rel="noopener noreferrer">jhump/protoreflect</a></li>
+<li><a href="https://github.com/inetaf/netaddr" target="_blank" rel="noopener noreferrer">inetaf/netaddr</a></li>
 </ul>
 </li>
-<li>原生DOM事件</li>
-<li>
+<li>For testing only:
 <ul>
-<li>event：事件对象</li>
-<li>带上多个参数</li>
+<li><a href="https://github.com/miekg/dns" target="_blank" rel="noopener noreferrer">miekg/dns</a></li>
+<li><a href="https://github.com/h12w/socks" target="_blank" rel="noopener noreferrer">h12w/socks</a></li>
 </ul>
 </li>
 </ul>
-<h3 id="事件回调" class="headerLink">
-    <a href="#%e4%ba%8b%e4%bb%b6%e5%9b%9e%e8%b0%83" class="header-mark"></a>事件回调</h3><p>script</p>
-<h2 id="项目初始化" class="headerLink">
-    <a href="#%e9%a1%b9%e7%9b%ae%e5%88%9d%e5%a7%8b%e5%8c%96" class="header-mark"></a>项目初始化</h2><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://gitee.com/jch1011/vue3_communication
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm i
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>安装好依赖后，运行一下</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm run dev
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="报错" class="headerLink">
-    <a href="#%e6%8a%a5%e9%94%99" class="header-mark"></a>报错</h4><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-zed" data-lang="zed"><span class="line"><span class="cl"><span class="n">error</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="n">starting</span><span class="w"> </span><span class="n">dev</span><span class="w"> </span><span class="n">server</span><span class="o">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Error</span><span class="o">:</span><span class="w"> </span><span class="n">listen</span><span class="w"> </span><span class="n">EACCES</span><span class="o">:</span><span class="w"> </span><span class="kd">permission</span><span class="w"> </span><span class="n">denied</span><span class="w"> </span><span class="err">127</span><span class="p">.</span><span class="err">0</span><span class="p">.</span><span class="err">0</span><span class="p">.</span><span class="err">1</span><span class="o">:</span><span class="err">3000</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>端口被占用，换个端口启动</li>
+<h3 id="代码结构" class="headerLink">
+    <a href="#%e4%bb%a3%e7%a0%81%e7%bb%93%e6%9e%84" class="header-mark"></a>代码结构</h3><h4 id="文件" class="headerLink">
+    <a href="#%e6%96%87%e4%bb%b6" class="header-mark"></a>文件</h4><p>.gitignore：就是在上传代码的时候，需要剔除哪些文件，不进行上传，不添加到仓库里面</p>
+<p>annotations.go：定义了一个结构体，Annotation的结构体，用于文档注解功能，不会在其他地方使用</p>
+<ul>
+<li>在注释中，以 &ldquo;v2ray:&rdquo; 开头的注解被视为是函数或类型的元数据。</li>
+<li>该注解结构体包含一个 API 字段，用于指定注解的类型或函数是否可以在其他库中使用以及其稳定性。具体来说，API 字段可以具有以下可能的值：</li>
+<li>
+<ul>
+<li>v2ray:api:beta：表示该类型或函数已经准备好供使用，但未来可能会发生变化。</li>
+<li>v2ray:api:stable：表示该类型或函数具有向后兼容的保证，稳定可靠。</li>
+<li>v2ray:api:deprecated：表示该类型或函数已经过时，不应再使用。</li>
 </ul>
+</li>
+<li>如果没有标有 api 注解的类型或函数，则意味着它们不应该被外部使用。</li>
+</ul>
+<h5 id="configgo" class="headerLink">
+    <a href="#configgo" class="header-mark"></a>config.go</h5><p>字面意思了，表示这个项目的配置文件了</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm run dev -- --port 8080
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">type ConfigLoader func(input interface{}) (*Config, error)
 </span></span></code></pre></td></tr></table>
 </div>
-</div></div>
+</div><p>这段代码定义了一个类型为configLoader的函数签名</p>
+<ul>
+<li>它描述了一个用于加载配置的函数类型</li>
+<li><code>type ConfigLoader</code>：这里使用了 <code>type</code> 关键字来定义一个新的类型，名为 ConfigLoader。</li>
+<li><code>func(input interface{}) (*Config, error)</code>：这是 ConfigLoader 类型所表示的函数签名。它定义了一个接受一个任意类型的参数 input，并返回一个指向 Config 类型对象以及一个 error 的函数。具体来说：
+<ul>
+<li><code>(input interface{})</code>：这部分描述了函数的参数列表，其中 <code>input</code> 是一个类型为 <code>interface{}</code> 的参数。使用 <code>interface{}</code> 表示可以接受任意类型的参数。</li>
+<li><code>(*Config, error)</code>：这部分描述了函数的返回值，其中 <code>*Config</code> 表示返回一个指向 Config 类型对象的指针，<code>error</code> 表示返回一个错误对象。</li>
+</ul>
+</li>
+</ul>
+<h5 id="v2raygo" class="headerLink">
+    <a href="#v2raygo" class="header-mark"></a>v2ray.go</h5><ul>
+<li>服务器是一个实例，任何时候，最多只能有一个server实例在运行</li>
+<li></li>
+</ul>
+<h4 id="目录" class="headerLink">
+    <a href="#%e7%9b%ae%e5%bd%95" class="header-mark"></a>目录</h4><h5 id="main" class="headerLink">
+    <a href="#main" class="header-mark"></a>main</h5><ul>
+<li>就是程序入口的地方</li>
+</ul>
+</div>
 
         
 
@@ -245,14 +239,14 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2023-11-02</span>
+                <span>更新于 2023-12-24</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
-            <div class="post-info-md"><span><a class="link-to-mardown" href=/vue20231102/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
+            <div class="post-info-md"><span><a class="link-to-mardown" href=/20231224one/index.md target="_blank" rel="noopener noreferrer">阅读原始文档</a>
                     </span></div>
-            <div class="post-info-share"><button title="分享到 Twitter" data-sharer="twitter" data-url="https://lv123123long.github.io/vue20231102/" data-title="Vue20231102" data-via="xxxx"><span class="fab fa-twitter fa-fw"></span></button><button title="分享到 Facebook" data-sharer="facebook" data-url="https://lv123123long.github.io/vue20231102/"><span class="fab fa-facebook-square fa-fw"></span></button><button title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://lv123123long.github.io/vue20231102/" data-title="Vue20231102" data-web><span class="fab fa-whatsapp fa-fw"></span></button><button title="分享到 Line" data-sharer="line" data-url="https://lv123123long.github.io/vue20231102/" data-title="Vue20231102"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="分享到 微博" data-sharer="weibo" data-url="https://lv123123long.github.io/vue20231102/" data-title="Vue20231102"><span class="fab fa-weibo fa-fw"></span></button><button title="分享到 Myspace" data-sharer="myspace" data-url="https://lv123123long.github.io/vue20231102/" data-title="Vue20231102" data-description=""><span data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></span></button><button title="分享到 Blogger" data-sharer="blogger" data-url="https://lv123123long.github.io/vue20231102/" data-title="Vue20231102" data-description=""><span class="fab fa-blogger fa-fw"></span></button><button title="分享到 Evernote" data-sharer="evernote" data-url="https://lv123123long.github.io/vue20231102/" data-title="Vue20231102"><span class="fab fa-evernote fa-fw"></span></button></div>
+            <div class="post-info-share"><button title="分享到 Twitter" data-sharer="twitter" data-url="https://lv123123long.github.io/20231224one/" data-title="20231224one" data-via="xxxx"><span class="fab fa-twitter fa-fw"></span></button><button title="分享到 Facebook" data-sharer="facebook" data-url="https://lv123123long.github.io/20231224one/"><span class="fab fa-facebook-square fa-fw"></span></button><button title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://lv123123long.github.io/20231224one/" data-title="20231224one" data-web><span class="fab fa-whatsapp fa-fw"></span></button><button title="分享到 Line" data-sharer="line" data-url="https://lv123123long.github.io/20231224one/" data-title="20231224one"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="分享到 微博" data-sharer="weibo" data-url="https://lv123123long.github.io/20231224one/" data-title="20231224one"><span class="fab fa-weibo fa-fw"></span></button><button title="分享到 Myspace" data-sharer="myspace" data-url="https://lv123123long.github.io/20231224one/" data-title="20231224one" data-description=""><span data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></span></button><button title="分享到 Blogger" data-sharer="blogger" data-url="https://lv123123long.github.io/20231224one/" data-title="20231224one" data-description=""><span class="fab fa-blogger fa-fw"></span></button><button title="分享到 Evernote" data-sharer="evernote" data-url="https://lv123123long.github.io/20231224one/" data-title="20231224one"><span class="fab fa-evernote fa-fw"></span></button></div>
         </div>
     </div>
 
@@ -263,8 +257,7 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/django_%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/" class="prev" rel="prev" title="Django_环境安装"><i class="fas fa-angle-left fa-fw"></i>Django_环境安装</a>
-            <a href="/v2fly_one/" class="next" rel="next" title="V2fly_one">V2fly_one<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/dns/" class="prev" rel="prev" title="DNS"><i class="fas fa-angle-left fa-fw"></i>DNS</a></div>
 </div>
 <div id="comments"></div></article></div>
         </main><footer class="footer">

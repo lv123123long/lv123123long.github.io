@@ -4,9 +4,58 @@
         <link>https://lv123123long.github.io/</link>
         <description>Wecome to my blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>a1749907938@gmail.com (lvlongxin)</managingEditor>
-            <webMaster>a1749907938@gmail.com (lvlongxin)</webMaster><lastBuildDate>Thu, 02 Nov 2023 23:17:33 &#43;0800</lastBuildDate>
+            <webMaster>a1749907938@gmail.com (lvlongxin)</webMaster><lastBuildDate>Sun, 24 Dec 2023 19:43:32 &#43;0800</lastBuildDate>
             <atom:link href="https://lv123123long.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>20231224one</title>
+    <link>https://lv123123long.github.io/20231224one/</link>
+    <pubDate>Sun, 24 Dec 2023 19:43:32 &#43;0800</pubDate><author>
+        <name>lvlongxin</name>
+    </author><guid>https://lv123123long.github.io/20231224one/</guid>
+    <description><![CDATA[V2ray代码解读 OverView 依赖的第三方库 In production: gorilla/websocket lucas-clemente/quic-go pires/go-proxyproto seiflotfy/cuckoofilter google/starlark-go jhump/protoreflect inetaf/netaddr For testing only: miekg/dns h12w/socks 代码结构 文件.gitignore：就是在上传代码的时候，需要剔除哪些文件，不进]]></description>
+</item><item>
+    <title>DNS</title>
+    <link>https://lv123123long.github.io/dns/</link>
+    <pubDate>Sun, 24 Dec 2023 17:50:35 &#43;0800</pubDate><author>
+        <name>lvlongxin</name>
+    </author><guid>https://lv123123long.github.io/dns/</guid>
+    <description><![CDATA[DNS服务 OverviewV2Ray 内置的 DNS 服务，其解析的 IP 往往先是用来匹配路由规则，如果配置不当，请求会在 DNS 请求上耗费一定时间。 路由 routing 的&quot;domainS]]></description>
+</item><item>
+    <title>Vmess</title>
+    <link>https://lv123123long.github.io/vmess/</link>
+    <pubDate>Sat, 23 Dec 2023 17:05:54 &#43;0800</pubDate><author>
+        <name>lvlongxin</name>
+    </author><guid>https://lv123123long.github.io/vmess/</guid>
+    <description><![CDATA[VMess OverViewVMess协议是由V2ray原创并使用于V2ray的加密传输协议，如同Shadowsocks一样为了对抗墙的深度包检测而研]]></description>
+</item><item>
+    <title>Code Translate</title>
+    <link>https://lv123123long.github.io/code-translate/</link>
+    <pubDate>Sat, 23 Dec 2023 16:10:25 &#43;0800</pubDate><author>
+        <name>lvlongxin</name>
+    </author><guid>https://lv123123long.github.io/code-translate/</guid>
+    <description><![CDATA[code-translate OverView 悬浮式翻译插件]]></description>
+</item><item>
+    <title>V2ray_three</title>
+    <link>https://lv123123long.github.io/v2ray_three/</link>
+    <pubDate>Sat, 23 Dec 2023 16:05:41 &#43;0800</pubDate><author>
+        <name>lvlongxin</name>
+    </author><guid>https://lv123123long.github.io/v2ray_three/</guid>
+    <description><![CDATA[V2ray配置文件说明 客户端 pppp 服务端 dddd]]></description>
+</item><item>
+    <title>V2fly_two</title>
+    <link>https://lv123123long.github.io/v2fly_two/</link>
+    <pubDate>Wed, 20 Dec 2023 21:45:04 &#43;0800</pubDate><author>
+        <name>lvlongxin</name>
+    </author><guid>https://lv123123long.github.io/v2fly_two/</guid>
+    <description><![CDATA[开始使用 注意点 V2Ray 对于时间有比较严格的要求，要求服务器和客户端时间差绝对值不能超过90 秒，所以一定要保证时间足够准确。 安装 软件上 V2Ray 不区分服务器]]></description>
+</item><item>
+    <title>V2fly_one</title>
+    <link>https://lv123123long.github.io/v2fly_one/</link>
+    <pubDate>Tue, 19 Dec 2023 22:12:32 &#43;0800</pubDate><author>
+        <name>lvlongxin</name>
+    </author><guid>https://lv123123long.github.io/v2fly_one/</guid>
+    <description><![CDATA[V2Fly OverView 1 A platform for building proxies to bypass network restrictions proxies：代理 platform：平台 bypass：绕过 restrictions：限制 一个用于构建代理以绕过网络]]></description>
+</item><item>
     <title>Vue20231102</title>
     <link>https://lv123123long.github.io/vue20231102/</link>
     <pubDate>Thu, 02 Nov 2023 23:17:33 &#43;0800</pubDate><author>
@@ -29,34 +78,5 @@
                     <name>helaoshi</name>
                 </author><guid>https://lv123123long.github.io/%E5%89%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D/</guid>
     <description><![CDATA[Monday helaosh jiandage libo]]></description>
-</item><item>
-    <title>My_blog</title>
-    <link>https://lv123123long.github.io/my_blog/</link>
-    <pubDate>Tue, 10 Oct 2023 23:23:35 &#43;0800</pubDate><author>
-        <name>lvlongxin</name>
-    </author><guid>https://lv123123long.github.io/my_blog/</guid>
-    <description><![CDATA[My blog hugo.toml hugo serve 的默认运行环境是 development, 而 hugo 的默认运行环境是 production. 由于本地 development 环境的限制, 评论系统, CDN 和 fingerprint 不会在 development 环境下启用. 你可以使用 hugo serve -e production 命令来开启这些]]></description>
-</item><item>
-    <title>Libo</title>
-    <link>https://lv123123long.github.io/libo/</link>
-    <pubDate>Tue, 10 Oct 2023 22:35:20 &#43;0800</pubDate><author>
-        <name>lvlongxin</name>
-    </author><guid>https://lv123123long.github.io/libo/</guid>
-    <description><![CDATA[博客创建过程记录 下载hugo 官网下载，，扩展版本的hugo 添加到环境变量，查看hugo是否可用 查找主题 hugo官网主题查找 我选择的是dolt]]></description>
-</item><item>
-    <title>Second_post</title>
-    <link>https://lv123123long.github.io/second_post/</link>
-    <pubDate>Tue, 03 Oct 2023 20:28:41 &#43;0800</pubDate><author>
-        <name>lvlongxin</name>
-    </author><guid>https://lv123123long.github.io/second_post/</guid>
-    <description><![CDATA[faewhjgeawf ffjewfkfhawlfkm;ewalf
-gavjwelm]]></description>
-</item><item>
-    <title>First_post</title>
-    <link>https://lv123123long.github.io/first_post/</link>
-    <pubDate>Tue, 03 Oct 2023 18:19:29 &#43;0800</pubDate><author>
-        <name>lvlongxin</name>
-    </author><guid>https://lv123123long.github.io/first_post/</guid>
-    <description><![CDATA[第一篇博客哈哈哈]]></description>
 </item></channel>
 </rss>
