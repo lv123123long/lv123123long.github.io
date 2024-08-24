@@ -1,9 +1,9 @@
-```
+---
 title: flow
 pubDate: 2024-08-24
 categories: ['画图']
-description: ''
-```
+description: '零零法尔加安慰了'
+---
 
 # flow
 
@@ -21,8 +21,6 @@ cond(yes)->io->e
 cond(no)->sub1(right)->op
 ```
 
-
-
 ## 标准流程图（横向）
 
 ```flow
@@ -36,6 +34,3 @@ st(right)->op(right)->cond
 cond(yes)->io(bottom)->e
 cond(no)->sub1(right)->op
 ```
-
-
-
