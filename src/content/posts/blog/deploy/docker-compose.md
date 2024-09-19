@@ -1,6 +1,6 @@
 ---
 title: docker-compose
-pubDate: 2024-09-218
+pubDate: 2024-09-18
 categories: ['blog','docker']
 description: ''
 ---
