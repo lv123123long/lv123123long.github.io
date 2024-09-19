@@ -43,3 +43,26 @@ RUN chmod a+x ${AUTO_RUN_DIR}/${RUN_SHELL}
 6. `COPY ./gvb.sql ${WORK_PATH}/`：这行代码将当前目录下的`gvb.sql`文件复制到镜像中的`${WORK_PATH}/`目录下。`${WORK_PATH}`是之前定义的环境变量，其值为`/usr/local/work`。
 7. `COPY ./${RUN_SHELL} ${AUTO_RUN_DIR}/`：这行代码将当前目录下的`${RUN_SHELL}`文件复制到镜像中的`${AUTO_RUN_DIR}/`目录下。`${RUN_SHELL}`是之前定义的环境变量，其值为`run.sh`。
 8. `RUN chmod a+x ${AUTO_RUN_DIR}/${RUN_SHELL}`：这行代码给`${AUTO_RUN_DIR}/${RUN_SHELL}`文件添加可执行权限。`${AUTO_RUN_DIR}`是之前定义的环境变量，其值为`/docker-entrypoint-initdb.d`，`${RUN_SHELL}`是之前定义的环境变量，其值为`run.sh`。
+
+
+
+### gvb.sql
+
+使用Navicat Premium工具从一个MySQL数据库服务器迁移数据到另一个MySQL数据库服务器。
+
+
+
+
+
+### run.sh
+
+```
+#!/bin/bash
+
+mysql -uroot -p$MYSQL_ROOT_PASSWORD << EOF
+system echo '================Start create database gvb====================';
+source $WORK_PATH/gvb.sql
+system echo '================OK!====================';
+EOF
+```
+

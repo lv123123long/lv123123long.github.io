@@ -1,10 +1,9 @@
 ---
 title: docker-compose
 pubDate: 2024-09-218
-categories: ['blog', 'docker']
+categories: ['blog','docker']
 description: ''
 ---
-
 # docker-compose
 
 ## OverView
